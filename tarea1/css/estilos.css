@@ -1,0 +1,31 @@
+h1{
+  color: white; /*Cambia el color del titulo a blanco*/
+  background-color: red; /*Cambia el color de fondo del titulo a rojo*/
+  font-size: 35px; /*Cambia el tamaña de fuente del titulo a 35px*/
+}
+
+h2{
+  color: white; /*Cambia el color del subtitulo a blanco*/
+  background-color: red; /*Cambia el color de fondo del subtitulo a rojo*/
+  font-size: 20px; /*Cambia el tamaño de fuente del subtitulo a 20px*/
+}
+
+p{
+  color: white; /*Cambia el color del parrafo a blanco*/
+  background-color: green; /*Cambia el color de fondo del parrafo a verde*/
+  font-size: 20px; /*Cambia el tamaño de fuente del parrafo a 20px*/
+}
+
+img{
+  width: 400px; /*Cambia el ancho de la imagen a 400px*/
+  height: 400px; /*Cambia el alto de la imagen a 400px*/
+}
+
+a{
+  color: black; /*Cambia el color del enlace a negro*/
+  text-decoration: none; /*Le quita el subrayado al enlace*/
+}
+
+a:hover{
+  color: green; /*Hace que al posar el cursor sobre el enlace este cambie de color a verde*/
+}
