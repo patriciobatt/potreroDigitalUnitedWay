@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.texto{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+h1{
+margin-bottom: 25px;
+font-family: Eras Demi ITC, Eras, sans-serif;
+font-weight: bold;
+}
+
+h2{
+margin-bottom: 25px;
+font-style: oblique;
+font-family: Trebuchet MS, Trebuchet, sans-serif;
+font-weight: lighter;
+font-size: 20px;
+color: grey;
+}
+
+p{
+ font-family: Trebuchet MS, Trebuchet, sans-serif;
+ font-weight: lighter;
+ font-weight: 500;
+ color: grey;
+ font-size: 21px;
+}
+
+img{
+  float: right;
+  width: 620px;
+  height: 400px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+footer{
+  color: grey;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 110px;
+  margin-left: 5px;
+}
