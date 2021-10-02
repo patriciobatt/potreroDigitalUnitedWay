@@ -1,0 +1,372 @@
+/*GENERAL*/
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Glory', sans-serif;
+}
+
+/*HEADER*/
+
+body{
+background-color: #39332f; /*Modifica el color de fondo del body*/
+}
+
+header{ /*Modifica posicionamiento, tamaño y color del header*/
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: #9c5d5d;
+}
+
+nav{ /*Modifica posicionamiento y tamaño del nav*/
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.nav__items{ /*Alinea y les da estilo a los elementos del nav*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  color: #f5b760;
+}
+
+/*MAIN*/
+
+h1{ /*Le da estilo a los h1 a los que no les di una clase o id*/
+  display: flex;
+  justify-content: center;
+  color: #fac06f;
+  font-size: 55px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+h2{ /*Le da estilo a los h2 a los que no les di una clase o id*/
+  display: flex;
+  justify-content: center;
+  color: #FFC069;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+h3{ /*Le da estilo a los h3 a los que no les di una clase o id*/
+  display: flex;
+  justify-content: flex-start;
+  color: #EFEFEF;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 1px;
+  margin-left: 7px;
+}
+
+#bio{ /*Le da estilo al parrafo "bio" (posicionamiento, color, tamaño, etc)*/
+  display: flex;
+  justify-content: center;
+  color: #EFEFEF;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.galeria__imagenes{ /*Indica el tamaño de la galeria de imagenes y como deben posicionarse los elementos dentro de ella*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.items__galeria:hover { /*Hace que al posicionar el puntero sobre una imagen el filtro de vaya y aparezca un borde en la imagen*/
+  border: 2px solid #9c5d5d;
+  filter: grayscale(0%);
+}
+
+.items__galeria{ /*Modifica el tamaño de las imagenes de la galeria, lo que termina determinando como se posicionan, ademas agrega un filtro de escala de grises*/
+  width: 24%;
+  margin-top: 10px;
+  filter: grayscale(40%);
+}
+
+#act{ /*Le da estilo al titulo de la seccion actualidad*/
+  display: flex;
+  justify-content: center;
+  color: #EFEFEF;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 3px;
+  margin-top: 50px;
+}
+
+#actualidad{ /*Indica el tamaño de la seccion y como deben posicionarse los elementos dentro de ella*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 80vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #9c5d5d;
+}
+
+#articulo{ /*Indica el tamaño del div "articulo" y como deben posicionarse los elementos dentro de ella*/
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+aside{ /*Modifica el posicionamiento del poster*/
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#img1{ /*Posiciona la imagen dentro del articulo*/
+  border: 1px solid #39332f;
+  margin-bottom: 3px;
+}
+
+#titulo__art{ /*Da estilo al titulo del articulo*/
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+#parrafo__art{ /*Da estilo al texto del articulo*/
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 25px;
+  }
+
+#titulo__otros{ /*Da estilo al titulo de la seccion otros*/
+  display: flex;
+  justify-content: center;
+  color: #EFEFEF;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+#seccion_otros{ /*Indica el tamaño de la seccion otros y como deben posicionarse los elementos dentro de ella*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 400px;
+  align-items: center;
+  background-color: #9c5d5d;
+}
+
+a{ /*Da estilo a los enlaces que no tienen clase ni id*/
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: #FFC069;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 20px;
+}
+
+a:hover { /*Quita el subrayado de los enlaces*/
+  color: #345B63;
+  text-decoration: none;
+}
+
+.title{
+  font-size: 35px;
+}
+
+.subtitle{
+  font-size: 25px;
+  color: #EFEFEF;
+}
+
+ul{ /*Da estilo a la lista*/
+  text-align: center;
+  color: #261515;
+}
+
+/*FOOTER*/
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+}
+
+#ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links_footer{
+  font-size: 21px;
+  color: white;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+#info_title{
+  font-size: 22px;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1000px) {
+
+  aside{
+    display: none;
+  }
+
+  header{
+    width: 100%;
+    height: 50vh;
+    background-color: #9c5d5d;
+  }
+
+  nav{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  h1{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  h2{
+    color: #FFC069;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  h3{
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+    margin-bottom: 1px;
+  }
+
+  #bio{
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+  }
+
+  #act{
+    font-size: 28px;
+  }
+
+  #titulo__art{
+    font-size: 25px;
+  }
+
+  #parrafo__art{
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 25px;
+ }
+
+ #actualidad{
+   width: 100%;
+   height: 95vh;
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+
+ a{
+   font-size: 15px;
+ }
+
+ #titulo__otros{
+   font-size: 25px;
+   margin-bottom: 10px;
+   margin-top: 50px;
+ }
+
+ .items__galeria{
+   width: 49%;
+ }
+
+ #seccion_otros{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 100%;
+   height: 100vh;
+   align-items: center;
+   background-color: #9c5d5d;
+ }
+
+ .title{
+   font-size: 30px;
+ }
+
+ .subtitle{
+   font-size: 20px;
+ }
+
+ footer{
+   flex-direction: column;
+ }
+
+ .links_footer{
+   font-size: 15px;
+ }
+
+ #info_title{
+   font-size: 20px;
+ }
+
+}

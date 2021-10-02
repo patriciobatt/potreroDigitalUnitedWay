@@ -1,0 +1,88 @@
+/*GENERAL*/
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Glory', sans-serif;
+}
+
+/*MAIN*/
+
+body{
+background-color: #39332f;
+}
+
+h1{
+  text-align: left;
+  color: #FFC069;
+}
+
+h2{
+  color: #EFEFEF;
+  font-size: 10px;
+  text-align: center;
+}
+
+.galeria_filmografia{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.poster_filmografia{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 60vh;
+}
+
+img{
+  border: solid 1px; color: #2e2a27;
+  filter: grayscale(10%);
+}
+
+img:hover {
+  filter: grayscale(0%);
+  border: solid 1px; color: #262321;
+}
+
+a{
+  text-decoration: none;
+  color: #FFC069;
+}
+
+@media (max-width: 1000px) {
+
+  h1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .galeria_filmografia{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 800vh;
+  }
+
+  h2{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+  }
+
+  .poster_filmografia{
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+  }
+
+  a{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+}

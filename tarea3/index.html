@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href=".\public\css\estilos.css"> <!--Enlace a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width"> <!--Meta tag para que el sitio sea responsive-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Enlace a google fonts necesario para cargar los estilos de fuente-->
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@300;400;500;800&display=swap" rel="stylesheet"> <!--Enlace al estilo de fuente elegido para mi sitio-->
+    <title>Film Gallery - Wes Anderson</title>
+  </head>
+
+  <body>
+
+<header> <!--Primero de los elementos estructurales de mi sitio donde se situa el nav-->
+ <nav> <!--Barra de navegacion que contiene enlaces que te digiren a las diferentes secciones de la pagina-->
+  <div class="nav__items"><a href="layouts\biografia.html" target="_blank">Biografía</a></div> <!--Este div contiene un elace de redireccionamiento a otra seccion de la pagina que esta en un nuevo archivo html-->
+  <div class="nav__items"><a href="#abajo">Actualidad</a></div> <!--Este div contiene un enlace que te redirecciona a otro sector de esta misma pagina-->
+  <div class="nav__items"><a href="layouts\filmografía.html" target="_blank">Filmografía</a></div>
+  <div class="nav__items"><a href="#footer">Mas información</a></div>
+ </nav>
+</header>
+
+<main> <!--El main es el segundo de los elementos estructurales del sitio y contiene la mayoria de secciones-->
+  <h1>Wes Anderson Film Gallery</h1> <!--Titulo de la pagina-->
+  <p id="bio">Wesley Wales Anderson, conocido como Wes Anderson, es un director de cine, guionista, productor y actor estadounidense. Conocido principalmente por haber dirigido las películas: Fantastic Mr. Fox, The Royal Tenenbaums, Viaje a Darjeeling, Rushmore, Moonrise Kingdom y El Gran Hotel Budapest, entre otras.</p> <!--Parrafo introductorio-->
+  <h2>The Grand Budapest Hotel (2014)</h2> <!--A los subtitulos los use para darle nombre a cada una de las galerias de imagenes-->
+  <h3>Direccion. Wes Anderson Cinematografia. Robert Yeoman</h3> <!--Y tambien para agregar un par de datos mas sobre las imagenes-->
+  <section class="galeria__imagenes"> <!--Cada seccion funciona como galeria de imagenes, y la clase es para diferenciarlas del resto de secciones a la hora de darle estilo en css-->
+    <img class="items__galeria" src="public\img\GBH16 (1094).jpg" alt="No se pudo cargar la imagen"> <!--Etiqueta de imagen con un enlace local y una clase para poder darle estilo y posicionarla-->
+    <img class="items__galeria" src="public\img\GBH37 (1088).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\GBH31 (1088).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\GBH41 (1081).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\GBH44 (1075).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\GBH52 (1042).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\GBH59 (977).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\GBH61 (931).jpg" alt="No se pudo cargar la imagen">
+  </section>
+  <h2>Fantastic Mr. Fox (2009)</h2>
+  <h3>Dirección. Wes Anderson Cinematografia. Tristan Oliver</h3>
+  <section class="galeria__imagenes">
+    <img class="items__galeria" src="public\img\FF05 (368).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\FF07 (368).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\FF08 (368).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\FF13 (375).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\FF19 (375).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\FF27 (375).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\FF29 (374).jpg" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\FF36 (372).jpg" alt="No se pudo cargar la imagen">
+  </section>
+  <h2>Moonrise Kingdom (2012)</h2>
+  <h3>Direccion. Wes Anderson Cinematografía. Robert Yeoman</h3>
+  <section class="galeria__imagenes">
+    <img class="items__galeria" src="public\img\MK01.png" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\MK02.png" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\MK03.png" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\MK04.png" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\MK05.png" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\MK06.png" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\MK07.png" alt="No se pudo cargar la imagen">
+    <img class="items__galeria" src="public\img\MK08.png" alt="No se pudo cargar la imagen">
+  </section>
+  <h2 id="act">Noticias de Actualidad</h2> <!--Subtitulo que le da apertura a la seccion de actualidad, la id es para diferenciarlo de los demas subtitulos-->
+  <a name="abajo"></a> <!---->
+  <section id="actualidad"> <!--Seccion de actualidad con su id correspondiente para diferenciarla de las galerias de imagenes-->
+    <div id="articulo"> <!--Este div contiene los elementos que forman parte del articulo de actualidad, estos son un titulo, un parrafo y una imagen (los tres con una id para poder darles estilo) y un enlace global a youtube-->
+      <h1 id="titulo__art">“The French Dispatch”, de Wes Anderson: una carta de amor al periodismo impreso con un elenco de grandes figuras</h1>
+      <p id="parrafo__art">La décima obra del cineasta, un homenaje a la revista The New Yorker, fue celebrada en Cannes con nueve minutos de aplausos. Se estrenará en octubre y cuenta con un elenco de siete ganadores del Oscar —Frances McDormand, Tilda Swinton, Benicio Del Toro y Adrien Brody entre ellos—, actores favoritos del director como Bill Murray y Owen Wilson y estrellas jóvenes como Timothée Chalamet y Saoirse Ronan.</p>
+      <img id="img1" src="public\img\REDACCION-FRENCH.jpg" alt="No se pudo cargar la imagen">
+      <a href="https://www.youtube.com/watch?v=TcPk2p0Zaw4">Vea el trailer en youtube</a>
+    </div>
+    <aside> <!--Aside con una imagen para complementar el articulo de actualidad-->
+      <img src="public\img\frenchdispatch.jpg" alt="Poster">
+    </aside>
+  </section>
+  <h1 id="titulo__otros">Otros Directores Recomendados</h1> <!--Titulo para una nueva seccion-->
+  <a name="footer"></a> <!--No se muy bien como llamarlo pero esto sirve como punto de redireccionamiento desde el nav-->
+  <section id="seccion_otros"> <!--Esta seccion contiene varias listas con recomendaciones-->
+    <div>
+      <h1 class="title">Paul Thomas Anderson</h1>
+      <h2 class="subtitle">Peliculas Recomendadas</h2>
+      <ul>
+        <li>Phantom Thread</li>
+        <li>There Will Be Blood</li>
+        <li>The Master</li>
+        <li>Punch-Drunk Love</li>
+        <li>Magnolia</li>
+      </ul>
+    </div>
+    <div>
+      <h1 class="title">Wong Kar-wai</h1>
+      <h2 class="subtitle">Peliculas Recomendadas</h2>
+      <ul>
+        <li>In the Mood for Love</li>
+        <li>Chungking Express</li>
+        <li>Fallen Angels</li>
+        <li>Happy Together</li>
+        <li>2046</li>
+      </ul>
+    </div>
+    <div>
+      <h1 class="title">Joel Coen</h1>
+      <h2 class="subtitle">Películas Recomendadas</h2>
+      <ul>
+        <li>No Country for Old Men</li>
+        <li>The Big Lebowski</li>
+        <li>Fargo</li>
+        <li>Inside Llewyn Davis</li>
+        <li>O Brother, Where Art Thou?</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer> <!--En el footer inclui una lista de enlaces hacia sitios que tienen mas info sobre el trabajo de wes anderson-->
+  <h2 id="info_title">Para mas información:</h2>
+  <ul id="ul">
+    <li>
+      <a class="links_footer" href="https://www.filmaffinity.com/ar/search.php?stype=director&sn&stext=Wes%20Anderson" target="_blank">Filmaffinity</a>
+    </li>
+    <li>
+      <a class="links_footer" href="https://www.imdb.com/name/nm0027572/" target="_blank">IMDb</a>
+    </li>
+    <li>
+      <a class="links_footer" href="https://letterboxd.com/director/wes-anderson/" target="_blank">Letterboxd</a>
+    </li>
+    <li>
+      <a class="links_footer" href="https://www.rottentomatoes.com/celebrity/wes_anderson" target="_blank">Rotten Tomatoes</a>
+    </li>
+  </ul>
+</footer>
+  </body>
+</html>
